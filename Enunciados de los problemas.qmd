@@ -7,3 +7,26 @@ format:
   typst:
     toc: true
 ---
+
+# Problema 1
+
+Aplicar los criterios de decisión bajo incertidumbre por separado, tanto en caso favorable como en caso desfavorable, para el problema cuya matriz de valores numéricos viene dada en la tabla siguiente:
+
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+ & e_1 & e_2 & e_3 & e_4\\
+\hline
+a_1 & 1 & 7 & 3 & 0 \\
+\hline
+a_2 & -2 & 1 & 5 & 4 \\
+\hline
+a_3 & 6 & -8 & 7 & 2 \\
+\hline
+a_4 & -5 & 0 & 3 & -1 \\
+\hline
+\end{array}
+$$
+
+# Problema 2
+
