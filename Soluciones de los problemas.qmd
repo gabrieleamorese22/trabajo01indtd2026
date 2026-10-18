@@ -3,6 +3,11 @@ title: "Soluciones de los problemas"
 format:
   html:
     toc: true
+    toc-depth: 2
+    toc-location: right
+    fig-cap-location: margin
+    code-tools: true
+    code-link: true
     embed-resources: true
   typst:
     toc: true
@@ -29,3 +34,82 @@ a4| -5| 0  | 3 | -1 |
 
 :::
 
+```{r}
+#| label: carga de la tabla de valores
+tabla1 <- crea.tablaX(c(1,7,3,0,
+                       -2,1,5,4,
+                       6,-8,7,2,
+                       -5,0,3,-1), numalternativas = 4, numestados = 4)
+tabla1
+```
+
+
+## Caso favorable
+
+```{r}
+#| label: Wald, problema 1, favorable
+criterio.Wald(tabla1, T)
+```
+
+```{r}
+#| label: Optimista, problema 1, favorable
+criterio.Optimista(tabla1, T)
+```
+
+```{r}
+#| label: Laplace, problema 1, favorable
+criterio.Laplace(tabla1, T)
+```
+
+```{r}
+#| label: Hurwicz, problema 1, favorable
+criterio.Hurwicz(tabla1, T)
+dibuja.criterio.Hurwicz(tabla1, T)
+dibuja.criterio.Hurwicz_Intervalos(tabla1, T, T)
+```
+
+```{r}
+#| label: Savage, problema 1, favorable
+criterio.Savage(tabla1, T)
+```
+
+```{r}
+#| label: Punto ideal, probblema 1, favorable
+criterio.PuntoIdeal(tabla1, T)
+```
+
+## Caso desfavorable
+
+```{r}
+#| label: Wald, problema 1, desfavorable
+criterio.Wald(tabla1, F)
+```
+
+```{r}
+#| label: Optimista, problema 1, desfavorable
+criterio.Optimista(tabla1, F)
+```
+
+```{r}
+#| label: Laplace, problema 1, desfavorable
+criterio.Laplace(tabla1, F)
+```
+
+```{r}
+#| label: Hurwicz, problema 1, desfavorable
+criterio.Hurwicz(tabla1, F)
+dibuja.criterio.Hurwicz(tabla1, F)
+dibuja.criterio.Hurwicz_Intervalos(tabla1, F, T)
+```
+
+```{r}
+#| label: Savage, problema 1, desfavorable
+criterio.Savage(tabla1, F)
+```
+
+```{r}
+#| label: Punto ideal, probblema 1, desfavorable
+criterio.PuntoIdeal(tabla1, F)
+```
+
+#Problema 2

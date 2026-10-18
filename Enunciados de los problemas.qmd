@@ -3,6 +3,11 @@ title: "Enunciados de los problemas"
 format:
   html:
     toc: true
+    toc-depth: 2
+    toc-location: right
+    fig-cap-location: margin
+    code-tools: true
+    code-link: true
     embed-resources: true
   typst:
     toc: true
@@ -30,3 +35,61 @@ $$
 
 # Problema 2
 
+```{=html}
+<table style="border-collapse: collapse; margin: 1.5em auto;
+              font-family: 'Latin Modern Math','Latin Modern Roman','Computer Modern',Georgia,serif;
+              font-size: 1.05em;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 10px 18px;"></th>
+      <th style="border: 1px solid black; padding: 10px 18px;"><i>e</i><sub>1</sub></th>
+      <th style="border: 1px solid black; padding: 10px 18px;"><i>e</i><sub>2</sub></th>
+      <th style="border: 1px solid black; padding: 10px 18px;"><i>e</i><sub>3</sub></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;"><i>d</i><sub>1</sub></td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">5</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">4</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">6</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;"><i>d</i><sub>2</sub></td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">2</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">3</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">1</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;"><i>d</i><sub>3</sub></td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">&minus;1</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">8</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">7</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;"><i>d</i><sub>4</sub></td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">5</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">2</td>
+      <td style="border: 1px solid black; padding: 10px 18px; text-align: center;">0</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```{=typst}
+#let payoff = table(
+  columns: 4,
+  stroke: 0.6pt,
+  align: (center, center, center, center),
+  inset: 9pt,
+  [], [$e_1$], [$e_2$], [$e_3$],
+  [$d_1$], [5], [4], [6],
+  [$d_2$], [2], [3], [1],
+  [$d_3$], [$-1$], [8], [7],
+  [$d_4$], [5], [2], [0],
+)
+
+#v(1.2em)
+#align(center, payoff)
+#v(1.2em)
+```
