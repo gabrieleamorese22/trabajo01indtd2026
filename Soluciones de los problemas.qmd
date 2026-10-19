@@ -51,10 +51,14 @@ tabla1
 criterio.Wald(tabla1, T)
 ```
 
+Como se puede ver, la mejor alternativa según el Criterio de Wald en el caso favorable es la a1. Aunque, la primera afirmaciòn del enunciado es verdadera.
+
 ```{r}
 #| label: Optimista, problema 1, favorable
 criterio.Optimista(tabla1, T)
 ```
+
+Se observa que las mejores alternativas según el Criterio Optimista en el caso favorable son la a1 y la a3. La cuarta afirmación del enunciado es falsa.
 
 ```{r}
 #| label: Laplace, problema 1, favorable
@@ -65,7 +69,6 @@ criterio.Laplace(tabla1, T)
 #| label: Hurwicz, problema 1, favorable
 criterio.Hurwicz(tabla1, T)
 dibuja.criterio.Hurwicz(tabla1, T)
-dibuja.criterio.Hurwicz_Intervalos(tabla1, T, T)
 ```
 
 ```{r}
@@ -77,6 +80,8 @@ criterio.Savage(tabla1, T)
 #| label: Punto ideal, probblema 1, favorable
 criterio.PuntoIdeal(tabla1, T)
 ```
+
+Es evidente que la alternativa a2 no resulta como la mejor en ningùn criterio, asì la segunda afirmaciòn del enunciado es falsa.
 
 ## Caso desfavorable
 
@@ -90,6 +95,8 @@ criterio.Wald(tabla1, F)
 criterio.Optimista(tabla1, F)
 ```
 
+La mejor alternativa según el Criterio Optimista en el caso desfavorable es la a3. Por lo tanto, la tercera afirmaciòn del enunciado es falsa.
+
 ```{r}
 #| label: Laplace, problema 1, desfavorable
 criterio.Laplace(tabla1, F)
@@ -99,8 +106,9 @@ criterio.Laplace(tabla1, F)
 #| label: Hurwicz, problema 1, desfavorable
 criterio.Hurwicz(tabla1, F)
 dibuja.criterio.Hurwicz(tabla1, F)
-dibuja.criterio.Hurwicz_Intervalos(tabla1, F, T)
 ```
+
+Segùn el criterio de Hurwicz, la mejor alternativa en el caso desfavorable es la a1. Por lo tanto, la quinta afirmaciòn del enunciado es verdadera.
 
 ```{r}
 #| label: Savage, problema 1, desfavorable
