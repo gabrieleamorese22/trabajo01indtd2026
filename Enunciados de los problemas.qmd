@@ -20,7 +20,7 @@ Aplicar los criterios de decisión bajo incertidumbre por separado, tanto en cas
 
 
 
-Responder con V o F a las siguientes afirmaciones:
+Luego, responder con V o F a las siguientes afirmaciones:
 
 1. Segùn el Criterio de Wald, la mejor alternativa es la a1 en el caso favorable. (V/F)
 2. La alternativa a2 es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
@@ -30,4 +30,14 @@ Responder con V o F a las siguientes afirmaciones:
 
 # Problema 2
 
-Luca y Mario quieren apuntarse a un gimnasio. McFit ofrece un paquete de 30 € al mes durante lo primeros cincos meses, y luego 50 € al mes; Sway ofrece un paquete con el primer mes gratis, y luego 40 € al mes. Ambos quieren apuntarse durante dos años para ganar fuerza. Sin embargo, nunca han sido constantes con el ejercicio, así que si no lo fueran, podrían abandonar después de los seis primeros meses. Luca está seguro, mientras que Mario, convencido por su amigo, se muestra escéptico ($\alpha = 0,5$). ¿Qué gimnasio elegiría cada uno?
+Luca y Mario querrían inscribirse en el gimnasio. El gimnasio McFit ofrece un paquete de 30 euros al mes durante los primeros 4 meses, para pasar después a 50 euros al mes; en cambio, el gimnasio Sway ofrece un paquete con el primer mes gratis, para pasar después a 40 euros al mes. Ambos quieren ir durante 1 año para ponerse más fuertes. Sin embargo, nunca han sido constantes con el ejercicio físico, así que si no lo fueran podrían dejarlo después de los primeros 6 meses. Luca confía en ello, mientras que Mario es más prudente, de hecho quiere estar seguro de arrepentirse lo menos posible de su elección. Utiliza todos los criterios de decisión bajo incertidumbre y respondes a las siguientes afirmaciones:
+ 
+1. Luca elige segùn el crtierio optimista, aunque va a elegir el gimnasio McFit. (V/F)
+
+2. Mario y Luca van a elegir el mismo gimnasio. (V/F)
+
+3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio segùn el criterio de Hurwicz con  $\alpha=0{,}5$.
+
+4. Mario elige segùn el criteriom de Savage, aunque va a elegir el gimnasio McFit. (V/F)
+
+5. Luca va a elegir el gimnasio Sway y Luca va a elegir el gimnasio McFit. (V/F)
