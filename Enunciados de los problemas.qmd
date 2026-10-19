@@ -17,16 +17,30 @@ format:
 
 Aplicar los criterios de decisión bajo incertidumbre por separado, tanto en caso favorable como en caso desfavorable, para el problema cuya matriz de valores numéricos viene dada en la tabla siguiente:
 
+::: {.decisione}
 
+|       | $e_1$ | $e_2$ | $e_3$ | $e_4$ |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| $d_1$ |   1   |   7   |   3   |   0   |
+| $d_2$ | $-2$  |   1   |   5   |   4   |
+| $d_3$ |   6   | $-8$  |   7   |   2   |
+| $d_4$ | $-5$  |   0   |   3   | $-1$  |
+
+:::
 
 
 Luego, responder con V o F a las siguientes afirmaciones:
 
-1. Segùn el Criterio de Wald, la mejor alternativa es la a1 en el caso favorable. (V/F)
-2. La alternativa a2 es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
-3. La alternativa a3 no es elegida en ningùn criterio en el caso desfavorable. (V/F)
-4. La alternativa a4 es la mejor según el Criterio Optimista en el caso favorable. (V/F)
-5. La alternativa a1 es la mejor segùn al menos 1 criterio en el caso desfavorable. (V/F)
+1. Segùn el Criterio de Wald, la mejor alternativa es la d1 en el caso favorable. (V/F)
+
+2. La alternativa d2 es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
+
+3. La alternativa d3 no es elegida en ningùn criterio en el caso desfavorable. (V/F)
+
+4. La alternativa d4 es la mejor según el Criterio Optimista en el caso favorable. 
+(V/F)
+
+5. La alternativa d1 es la mejor segùn al menos 1 criterio en el caso desfavorable. (V/F)
 
 # Problema 2
 
@@ -34,7 +48,7 @@ Luca y Mario querrían inscribirse en el gimnasio. El gimnasio McFit ofrece un p
  
 1. Luca elige segùn el crtierio optimista, aunque va a elegir el gimnasio McFit. (V/F)
 
-2. Mario y Luca van a elegir el mismo gimnasio. (V/F)
+2. El gimnasio McFit resulta seleccionada por más criterios que  el ggimnasio Sway. (V/F)
 
 3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio segùn el criterio de Hurwicz con  $\alpha=0{,}5$.
 
