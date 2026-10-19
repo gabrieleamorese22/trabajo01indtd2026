@@ -48,10 +48,10 @@ Luca y Mario querrían inscribirse en el gimnasio. El gimnasio McFit ofrece un p
  
 1. Luca elige segùn el crtierio optimista, aunque va a elegir el gimnasio McFit. (V/F)
 
-2. El gimnasio McFit resulta seleccionada por más criterios que  el ggimnasio Sway. (V/F)
+2. El gimnasio McFit resulta seleccionada por más criterios que el ggimnasio Sway. (V/F)
 
-3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio segùn el criterio de Hurwicz con  $\alpha=0{,}5$.
+3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio Sway segùn el criterio de Hurwicz con  $\alpha=0{,}5$.
 
-4. Mario elige segùn el criteriom de Savage, aunque va a elegir el gimnasio McFit. (V/F)
+4. Mario elige segùn el criterio de Savage, aunque va a elegir el gimnasio McFit. (V/F)
 
-5. Luca va a elegir el gimnasio Sway y Luca va a elegir el gimnasio McFit. (V/F)
+5. Mario va a elegir el gimnasio Sway y Luca va a elegir el gimnasio McFit. (V/F)
