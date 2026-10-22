@@ -31,27 +31,26 @@ Aplicar los criterios de decisión bajo incertidumbre por separado, tanto en cas
 
 Luego, responder con V o F a las siguientes afirmaciones:
 
-1. Segùn el Criterio de Wald, la mejor alternativa es la d1 en el caso favorable. (V/F)
+1. Segùn el Criterio de Wald, la mejor alternativa es la $d_1$ en el caso favorable. (V/F)
 
-2. La alternativa d2 es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
+2. La alternativa $d_2$ es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
 
-3. La alternativa d3 no es elegida en ningùn criterio en el caso desfavorable. (V/F)
+3. La alternativa $d_3$ no es elegida en ningùn criterio en el caso desfavorable. (V/F)
 
-4. La alternativa d4 es la mejor según el Criterio Optimista en el caso favorable. 
-(V/F)
+4. La alternativa $d_4$ es la mejor según el Criterio Optimista en el caso favorable. (V/F)
 
-5. La alternativa d1 es la mejor segùn al menos 1 criterio en el caso desfavorable. (V/F)
+5. La alternativa $d_1$ es la mejor segùn al menos 1 criterio en el caso desfavorable. (V/F)
 
 # Problema 2
 
 Luca y Mario querrían inscribirse en el gimnasio. El gimnasio McFit ofrece un paquete de 30 euros al mes durante los primeros 4 meses, para pasar después a 50 euros al mes; en cambio, el gimnasio Sway ofrece un paquete con el primer mes gratis, para pasar después a 40 euros al mes. Ambos quieren ir durante 1 año para ponerse más fuertes. Sin embargo, nunca han sido constantes con el ejercicio físico, así que si no lo fueran podrían dejarlo después de los primeros 6 meses. Luca confía en ello, mientras que Mario es más prudente, de hecho quiere estar seguro de arrepentirse lo menos posible de su elección. Utiliza todos los criterios de decisión bajo incertidumbre y respondes a las siguientes afirmaciones:
  
-1. Luca elige segùn el crtierio optimista, aunque va a elegir el gimnasio McFit. (V/F)
+1. Luca elige segùn el Criterio Optimista, aunque va a elegir el gimnasio McFit. (V/F)
 
-2. El gimnasio McFit resulta seleccionada por más criterios que el ggimnasio Sway. (V/F)
+2. El gimnasio McFit resulta seleccionada por más criterios que el gimnasio Sway. (V/F)
 
-3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio Sway segùn el criterio de Hurwicz con  $\alpha=0{,}5$.
+3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio segùn el Criterio de Hurwicz con  $\alpha=0{,}5$.
 
-4. Mario elige segùn el criterio de Savage, aunque va a elegir el gimnasio McFit. (V/F)
+4. Mario elige segùn el Criterio de Savage, aunque va a elegir el gimnasio McFit. (V/F)
 
 5. Mario va a elegir el gimnasio Sway y Luca va a elegir el gimnasio McFit. (V/F)
