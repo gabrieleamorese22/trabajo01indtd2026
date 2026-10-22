@@ -27,22 +27,22 @@ Aplicar los criterios de decisión bajo incertidumbre por separado, tanto en cas
 
 |  | e1 | e2 | e3 | e4 | 
 |---|---|---|---|---|
-a1| 1 | 7  | 3 | 0 |
-a2| -2| 1  | 5 | 4  |
-a3| 6 | -8  |  7 | 2 |
-a4| -5| 0  | 3 | -1 |
+d1| 1 | 7  | 3 | 0 |
+d2| -2| 1  | 5 | 4  |
+d3| 6 | -8  |  7 | 2 |
+d4| -5| 0  | 3 | -1 |
 
 Luego, responder con V o F a las siguientes afirmaciones:
 
-1. Segùn el Criterio de Wald, la mejor alternativa es la d1 en el caso favorable. (V/F)
+1. Segùn el Criterio de Wald, la mejor alternativa es la $d_1$ en el caso favorable. (V/F)
 
-2. La alternativa d2 es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
+2. La alternativa $d_2$ es la mejor segùn màs de 1 criterio en el caso favorable. (V/F)
 
-3. La alternativa d3 no es elegida en ningùn criterio en el caso desfavorable. (V/F)
+3. La alternativa $d_3$ no es elegida en ningùn criterio en el caso desfavorable. (V/F)
 
-4. La alternativa d4 es la mejor según el Criterio Optimista en el caso favorable. (V/F)
+4. La alternativa $d_4$ es la mejor según el Criterio Optimista en el caso favorable. (V/F)
 
-5. La alternativa d1 es la mejor segùn al menos 1 criterio en el caso desfavorable. (V/F)
+5. La alternativa $d_1$ es la mejor segùn al menos 1 criterio en el caso desfavorable. (V/F)
 
 :::
 
@@ -63,14 +63,14 @@ tabla1
 criterio.Wald(tabla1, T)
 ```
 
-Como se puede ver, la mejor alternativa según el Criterio de Wald en el caso favorable es la d1. Aunque, la primera afirmaciòn del enunciado es verdadera.
+Como se puede ver, la mejor alternativa según el Criterio de Wald en el caso favorable es la $d_1$. Aunque, la primera afirmaciòn del enunciado es verdadera.
 
 ```{r}
 #| label: Optimista, problema 1, favorable
 criterio.Optimista(tabla1, T)
 ```
 
-Se observa que las mejores alternativas según el Criterio Optimista en el caso favorable son la d1 y la d3. La cuarta afirmación del enunciado es falsa.
+Se observa que las mejores alternativas según el Criterio Optimista en el caso favorable son la $d_1$ y la $d_3$. La cuarta afirmación del enunciado es falsa.
 
 ```{r}
 #| label: Laplace, problema 1, favorable
@@ -79,8 +79,8 @@ criterio.Laplace(tabla1, T)
 
 ```{r}
 #| label: Hurwicz, problema 1, favorable
-criterio.Hurwicz(tabla1, T)
-dibuja.criterio.Hurwicz(tabla1, T)
+criterio.Hurwicz(tabla1,alfa = 0.5, T)
+dibuja.criterio.Hurwicz(tabla1,  T)
 ```
 
 ```{r}
@@ -89,11 +89,11 @@ criterio.Savage(tabla1, T)
 ```
 
 ```{r}
-#| label: Punto ideal, probblema 1, favorable
+#| label: Punto ideal, problema 1, favorable
 criterio.PuntoIdeal(tabla1, T)
 ```
 
-Es evidente que la alternativa d2 no resulta como la mejor en ningùn criterio, asì la segunda afirmaciòn del enunciado es falsa.
+Es evidente que la alternativa $d_2$ no resulta como la mejor en ningùn criterio, asì la segunda afirmaciòn del enunciado es falsa.
 
 ## Caso desfavorable
 
@@ -107,7 +107,7 @@ criterio.Wald(tabla1, F)
 criterio.Optimista(tabla1, F)
 ```
 
-La mejor alternativa según el Criterio Optimista en el caso desfavorable es la d3. Por lo tanto, la tercera afirmaciòn del enunciado es falsa.
+La mejor alternativa según el Criterio Optimista en el caso desfavorable es la $d_3$. Por lo tanto, la tercera afirmaciòn del enunciado es falsa.
 
 ```{r}
 #| label: Laplace, problema 1, desfavorable
@@ -116,11 +116,11 @@ criterio.Laplace(tabla1, F)
 
 ```{r}
 #| label: Hurwicz, problema 1, desfavorable
-criterio.Hurwicz(tabla1, F)
+criterio.Hurwicz(tabla1, alfa = 0.5, F)
 dibuja.criterio.Hurwicz(tabla1, F)
 ```
 
-Segùn el criterio de Hurwicz, la mejor alternativa en el caso desfavorable es la a1. Por lo tanto, la quinta afirmaciòn del enunciado es verdadera.
+Segùn el criterio de Hurwicz, la mejor alternativa en el caso desfavorable es la $d_4$. Por lo tanto, la quinta afirmaciòn del enunciado es falsa.
 
 ```{r}
 #| label: Savage, problema 1, desfavorable
@@ -138,38 +138,38 @@ criterio.PuntoIdeal(tabla1, F)
 
 Luca y Mario querrían inscribirse en el gimnasio. El gimnasio McFit ofrece un paquete de 30 euros al mes durante los primeros 6 meses, para pasar después a 50 euros al mes; en cambio, el gimnasio Sway ofrece un paquete con el primer mes gratis, para pasar después a 40 euros al mes. Ambos quieren ir durante 1 año para ponerse más fuertes. Sin embargo, nunca han sido constantes con el ejercicio físico, así que si no lo fueran podrían dejarlo después de los primeros 6 meses. Luca confía en ello, mientras que Mario es más prudente, de hecho quiere estar seguro de arrepentirse lo menos posible de su elección. Utiliza todos los criterios de decisión bajo incertidumbre y respondes a las siguientes afirmaciones:
  
-1. Luca elige segùn el crtierio optimista, aunque va a elegir el gimnasio McFit. (V/F)
+1. Luca elige segùn el Criterio Optimista, aunque va a elegir el gimnasio McFit. (V/F)
 
-2. El gimnasio McFit resulta seleccionada por más criterios que el gimnasio Sway. (V/F)
+2. El gimnasio McFit resulta seleccionado por más criterios que el gimnasio Sway. (V/F)
 
-3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio segùn el criterio de Hurwicz con  $\alpha=0{,}5$.
+3. Mario no es ni pesimista ni optimista, asì va a elegir el gimnasio segùn el Criterio de Hurwicz con  $\alpha=0{.}5$.
 
-4. Mario elige segùn el criteriom de Savage, aunque va a elegir el gimnasio McFit. (V/F)
+4. Mario elige segùn el Criterio de Savage, aunque va a elegir el gimnasio Sway. (V/F)
 
-5. Luca va a elegir el gimnasio Sway y Luca va a elegir el gimnasio McFit. (V/F)
+5. Mario y Luca van a elegir el mismo gimnasio. (V/F)
 
 :::
 
 
 Planteamos el siguiente problema considerando primero las alternativas y luego los estados de la naturaleza:
 
-* d1: gimnasio McFit
+* $d_1$: gimnasio McFit
 
-* d2: gimnasio Sway
+* $d_2$: gimnasio Sway
 
-* e1: Luca y Mario se van a entrenar durante 1 año
+* $e_1$: Luca y Mario se van a entrenar durante 1 año
 
-* e2: Luca y Mario no se van a entrenar màs despues de 6 meses
+* $e_2$: Luca y Mario no se van a entrenar màs despues de 6 meses
 
 Ahora planteamos la tabla de valoraciones:
 
-* Alternativa d1:
-  + e1: $30\cdot6 + 50\cdot6 = 480$ euros
-  + e2: $30\cdot6 + 50\cdot0 = 180$ euros
+* Alternativa $d_1$:
+  + $e_1$: $30\cdot6 + 50\cdot6 = 480$ euros
+  + $e_2$: $30\cdot6 + 50\cdot0 = 180$ euros
 
-* Alternativa d2:
-  + e1: $0\cdot1 + 40\cdot11 = 440$ euros
-  + e2: $0\cdot1 + 40\cdot5 = 200$ euros
+* Alternativa $d_2$:
+  + $e_1$: $0\cdot1 + 40\cdot11 = 440$ euros
+  + $e_2$: $0\cdot1 + 40\cdot5 = 200$ euros
 
 ```{r}
 #| label: planteamiento del problema 2
@@ -181,9 +181,9 @@ Vamos ahora a aplicar los criterios de decisión bajo incertidumbre para el prob
 
 ```{r}
 #| label: aplicaciòn de los criterios
-criterio.Todos(tabla2, F)
+criterio.Todos(tabla2, alfa = 0.5, F)
 ```
 
-Como se puede entender claramente de el enunciado del problema, Luca es optimista y asì va a elegir cel gimnasio McFit on el criterio optimista, mientras Mario va a elegir cel gimnasio McFit on el criterio de Savage, porque quiere el minimo arrepentimiento. Aunque, las afirmaciones 1, 4 son verdaderas y las 3 y 5 son falsas.
+Como se puede entender claramente de el enunciado del problema, Luca es optimista y asì va a elegir el gimnasio McFit on el Criterio Optimista, mientras Mario va a elegir el gimnasio Sway con el Criterio de Savage, porque quiere el minimo arrepentimiento. Aunque, las afirmaciones 1, 4 son verdaderas y la 3 y 5 son falsas.
 
-Además, como podemos ver en el resultado de la aplicaciòn de todos los criterios, el gimnasio McFit resulta seleccionado por más criterios que el gimnasio Sway, asì la afirmaciòn 2 es verdadera.
+Además, como podemos ver en el resultado de la aplicaciòn de todos los criterios, el gimnasio Sway resulta seleccionado por más criterios que el gimnasio McFit, asì la afirmaciòn 2 es falsa.
