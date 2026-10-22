@@ -5,6 +5,8 @@ Esto repositorio contiene 3 documentos:
 2) Enunciados de los problemas
 3) Solucuiones de los problemas.
 
+Ademàs, contiene las execuciones en pdf y en html de los ultimos dos archivos y el projecto correspondiente tambìen.
+
 ## Contenido de "Enunciados de los problemas"
 
 En el segundo documento son enunciados dos problemas de decision bajo incertidumbre. 
